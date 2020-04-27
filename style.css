@@ -14,7 +14,7 @@
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
-	/* position: fixed; */
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 10;
@@ -33,7 +33,7 @@
 }
 
 .hero-section {
-	height: 90vh;
+	height: 100vh;
 	position: relative;
 	background-color: #1f1e21;
 	background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
@@ -44,6 +44,7 @@
 	text-align: center;
 	position: absolute;
 	top: 50%;
+	height: 100vh;
 }
 
 .welcome-section h1 {
@@ -68,7 +69,6 @@
 	width: 100%;
 	max-width: 1280px;
 	margin: 0 auto;
-	margin-bottom: 6rem;
 	padding: 20px;
 }
 
@@ -80,6 +80,11 @@
 	color: white;
 	font-size: 40px;
 	padding-top: 40px;
+}
+
+.projects-section a {
+	text-decoration: none;
+	color: white;
 }
 
 .project-tile {
@@ -98,4 +103,67 @@
 	background-color: #303841;
 	color: white;
 	padding: 20px;
+}
+
+.social-media-section {
+	width: 100%;
+	background-color: #303841;
+	color: white;
+}
+
+.social-media-section h2 {
+	padding-top: 40px;
+	width: 100%;
+	text-align: center;
+	font-size: 60px;
+}
+
+.social-media-section p {
+	width: 100%;
+	text-align: center;
+}
+
+.social-media-links {
+	margin-top: 20px;
+	padding-bottom: 40px;
+}
+
+.social-media-links ul {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+	/* align-items: center; */
+	/* flex-direction: column; */
+}
+
+.social-media-links a {
+	text-decoration: none;
+	color: white;
+	padding: 0 40px;
+	font-size: 20px;
+}
+
+footer {
+	border-top: 5px solid #932f3d;
+	background-color: #303841;
+	color: white;
+	display: flex;
+	justify-content: space-between;
+	padding: 40px 80px 40px 80px;
+	flex-wrap: wrap;
+}
+
+footer p {
+	padding: 10px 0;
+}
+
+@media (max-width: 800px) {
+	.social-media-links ul {
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.social-media-links a {
+		line-height: 50px;
+	}
 }
